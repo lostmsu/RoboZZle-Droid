@@ -14,22 +14,6 @@ repositories {
     maven { url 'https://oss.sonatype.org/content/repositories/ksoap2-android-releases/' }
 }
 
-task generateTelemetryModel << {
-    exec {
-        executable "C:\\Users\\lost\\Projects\\OSS\\cs2j\\CSharpTranslator\\src\\CS2JTranslator\\bin\\Debug\\cs2j.exe"
-        args "-net-templates-dir=C:\\Users\\lost\\Projects\\OSS\\cs2j\\CSharpTranslator\\src\\CS2JTranslator\\NetFramework\\;C:\\Users\\lost\\Projects\\RoboZZle\\Rob\\RoboZZle.Telemetry\\Android",
-                "-out-java-dir=C:\\Users\\lost\\Projects\\RoboZZle\\RoboZZle Droid\\gen",
-                "-cs-dir=C:\\Users\\lost\\Projects\\RoboZZle\\Rob\\RoboZZle.Telemetry",
-                "-make-java-naming-conventions=false",
-                "-D=JAVA",
-                "-blanket-throw=false"
-    }
-}
-
-gradle.projectsEvaluated {
-    preBuild.dependsOn generateTelemetryModel
-}
-
 dependencies {
     compile 'commons-io:commons-io:2.4'
     compile 'com.google.code.ksoap2-android:ksoap2-android:2.5.1'
@@ -68,8 +52,3 @@ android {
         release.setRoot('build-types/release')
     }
 }
-
-tasks.withType(JavaCompile) {
-    compileTask -> compileTask.dependsOn generateTelemetryModel
-}
-
