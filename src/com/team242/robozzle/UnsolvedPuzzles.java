@@ -10,8 +10,8 @@ import android.content.Intent;
 import android.content.SharedPreferences.Editor;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import android.text.InputType;
 import android.view.*;
 import android.view.MenuItem.OnMenuItemClickListener;
@@ -360,7 +360,7 @@ public class UnsolvedPuzzles extends GenericPuzzleActivity {
 
 		MenuItem search = menu.findItem(R.id.action_search);
 		try {
-			android.support.v7.widget.SearchView searchView = (android.support.v7.widget.SearchView)search.getActionView();
+			SearchView searchView = (SearchView)search.getActionView();
 			searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 				@Override
 				public boolean onQueryTextSubmit(String query) {

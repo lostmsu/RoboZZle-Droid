@@ -1,10 +1,12 @@
 buildscript {
     repositories {
+        google()
+        jcenter()
         mavenCentral()
         maven { url 'http://ksoap2-android.googlecode.com/svn/m2-repo' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:4.0.2'
     }
 }
 apply plugin: 'com.android.application'
@@ -12,26 +14,28 @@ apply plugin: 'com.android.application'
 repositories {
     mavenCentral()
     maven { url 'https://oss.sonatype.org/content/repositories/ksoap2-android-releases/' }
+    google()
 }
 
 dependencies {
     compile 'commons-io:commons-io:2.4'
     compile 'com.google.code.ksoap2-android:ksoap2-android:2.5.1'
     compile 'com.j256.ormlite:ormlite-android:4.48'
-    compile 'com.android.support:support-v4:24.2.1'
-    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'androidx.legacy:legacy-support-v4:1.0.0'
+    compile 'androidx.appcompat:appcompat:1.2.0'
     compile 'net.sf.flexjson:flexjson:3.2'
+    compile 'io.github.lostmsu:org.cs2j.dotnet.corlib:0.1'
 }
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.1'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
 
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
-            java.srcDirs = ['src', '..\\..\\OSS\\cs2j\\CS2JLibrary\\src', 'gen']
-            java.excludes = ['**\\Net\\**', '**\\System\\Web\\**', '**\\System\\Resources\\**', '**\\CollectionSupport.java']
+            java.srcDirs = ['src', 'gen']
+            java.excludes = ['**\\CollectionSupport.java']
             resources.srcDirs = ['src']
             aidl.srcDirs = ['src']
             renderscript.srcDirs = ['src']
@@ -50,5 +54,8 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
+    }
+    defaultConfig {
+        minSdkVersion 14
     }
 }

@@ -21,7 +21,6 @@ import android.graphics.Bitmap.Config;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.*;
@@ -29,6 +28,7 @@ import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.*;
+import androidx.appcompat.widget.Toolbar;
 import android.widget.LinearLayout.LayoutParams;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.stmt.DeleteBuilder;
@@ -1408,7 +1408,7 @@ public class Solver extends GenericPuzzleActivity {
 		if (isRunning()){
 			try {
 				this.sessionLogWriter.LogPlayEnd(state.getTotalSteps());
-			}catch (CS2JNet.System.InvalidOperationException e){
+			}catch (IllegalStateException e){
 				Log.w("RobAI", "An attempt to log play end command when robot is not running according to log");
 			}
 		}

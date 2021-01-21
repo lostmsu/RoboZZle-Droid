@@ -8,7 +8,6 @@ import android.util.Log;
 import CS2JNet.JavaSupport.util.LocaleSupport;
 import CS2JNet.System.ArgumentNullException;
 import CS2JNet.System.ArgumentOutOfRangeException;
-import CS2JNet.System.InvalidOperationException;
 import CS2JNet.System.StringSupport;
 import java.util.Calendar;
 import java.util.Date;
@@ -52,15 +51,15 @@ public final class SessionLogWriter
             throw new ArgumentOutOfRangeException("currentSteps");
          
         if (this.playCommandInProgress == null)
-            throw new InvalidOperationException("The last command was not a play command");
+            throw new IllegalStateException("The last command was not a play command");
          
         if (this.playCommandInProgress.getSteps() > 0)
-            throw new InvalidOperationException("The last play command has already been stopped");
+            throw new IllegalStateException("The last play command has already been stopped");
          
         if (currentSteps + this.playCommandInProgress.getSteps() < 0)
         {
             String errorMessage = String.format(LocaleSupport.INVARIANT, StringSupport.CSFmtStrToJFmtStr("Value must be greater than, or equal to {0}"),-((long)this.playCommandInProgress.getSteps()));
-            throw new ArgumentOutOfRangeException("currentSteps", currentSteps, errorMessage);
+            throw new ArgumentOutOfRangeException(errorMessage, "currentSteps");
         }
          
         this.playCommandInProgress.setSteps(this.playCommandInProgress.getSteps() + currentSteps);

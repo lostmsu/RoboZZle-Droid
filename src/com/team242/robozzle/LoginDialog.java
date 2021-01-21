@@ -1,6 +1,5 @@
 package com.team242.robozzle;
 
-import CS2JNet.System.InvalidOperationException;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -91,7 +90,7 @@ public class LoginDialog extends Dialog {
 	@Override
 	public void show() {
 		if (pref == null)
-			throw new InvalidOperationException();
+			throw new IllegalStateException();
 		super.show();
 	}
 

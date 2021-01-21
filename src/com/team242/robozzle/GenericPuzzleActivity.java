@@ -11,12 +11,12 @@ import android.graphics.*;
 import android.graphics.Bitmap.Config;
 import android.graphics.Paint.Style;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.team242.robozzle.achievements.Achievement;
 import com.team242.robozzle.model.Direction;
@@ -377,7 +377,7 @@ public abstract class GenericPuzzleActivity extends AppCompatActivity {
 					canvas.drawBitmap(board, src, dest, paint);
 				} else {
 					// TODO: do it by demand only
-					canvas.save(Canvas.CLIP_SAVE_FLAG);
+					canvas.saveLayer(0, 0, canvas.getWidth(), canvas.getHeight(), null);
 					canvas.clipRect(dest);
 					canvas.drawColor(0, PorterDuff.Mode.CLEAR);
 					canvas.restore();
@@ -446,7 +446,7 @@ public abstract class GenericPuzzleActivity extends AppCompatActivity {
 			break;
 
 		default:
-			canvas.save(Canvas.CLIP_SAVE_FLAG);
+			canvas.saveLayer(0, 0, canvas.getWidth(), canvas.getHeight(), null);
 			canvas.clipRect(dest);
 			canvas.drawARGB(0, 128, 128, 128);
 			canvas.restore();
