@@ -5,6 +5,7 @@ package com.team242.robozzle;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceFragment;
 
 /**
  * @author lost
@@ -29,10 +30,23 @@ public class RoboZZleSettings extends PreferenceActivity {
 	@Override
 	protected void onCreate(Bundle state){
 		super.onCreate(state);
-		
-		getPreferenceManager().setSharedPreferencesName(SHARED_PREFERENCES_NAME);
-		
-		addPreferencesFromResource(R.xml.team242_robozzle_settings);
 
+		getFragmentManager()
+			.beginTransaction()
+				.replace(android.R.id.content, new RoboZZlePreferencesFragment())
+			.commit();
+	}
+
+	public boolean isValidFragment(String fragmentName){
+		return RoboZZlePreferencesFragment.class.getName().equals(fragmentName);
+	}
+
+	public static class RoboZZlePreferencesFragment extends PreferenceFragment {
+		@Override
+		public void onCreate(final Bundle savedInstanceState){
+			super.onCreate(savedInstanceState);
+			getPreferenceManager().setSharedPreferencesName(SHARED_PREFERENCES_NAME);
+			addPreferencesFromResource(R.xml.team242_robozzle_settings);
+		}
 	}
 }
