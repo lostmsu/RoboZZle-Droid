@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.team242.robozzle" android:versionCode="54"
-	android:versionName="0.4.2.48" xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest package="com.team242.robozzle" android:versionCode="55"
+	android:versionName="0.4.3.48" xmlns:android="http://schemas.android.com/apk/res/android"
 	android:installLocation="auto"
 	>
 	<uses-sdk android:targetSdkVersion="24" />
