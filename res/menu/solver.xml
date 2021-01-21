@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:title="@string/details" android:id="@+id/menuDetails"
+		android:icon="@android:drawable/ic_menu_info_details"/>
+	<item android:title="@string/help" android:id="@+id/menuHelp"
+		android:icon="@android:drawable/ic_menu_help"
+		app:showAsAction="always"/>
+	<item android:title="@string/clearCode" android:id="@+id/menuClearCode"
+		android:icon="@android:drawable/ic_menu_close_clear_cancel"/>
+	<item android:title="@string/loadSolution" android:id="@+id/menuLoadSolution"
+		android:icon="@android:drawable/ic_menu_rotate"/>
+</menu>

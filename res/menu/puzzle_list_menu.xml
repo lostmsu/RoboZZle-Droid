@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/updatePuzzles"
+          android:title="@string/updatePuzzles"
+          android:icon="@android:drawable/ic_menu_set_as" />
+    <item	android:id="@+id/shareSolutions"
+    		android:title="@string/shareSolutions"
+    		android:icon="@android:drawable/ic_menu_share" />
+	<item
+			android:id="@+id/action_search"
+			android:icon="@android:drawable/ic_menu_search"
+			app:showAsAction="always"
+			app:actionViewClass="android.support.v7.widget.SearchView"
+			android:title="Search"/>
+    <item android:id="@+id/filterSolved"
+    	android:title="@string/filterSolved"
+    	android:icon="@android:drawable/presence_online"
+        app:showAsAction="always"
+    />
+    <item android:id="@+id/filterPopular"
+    	android:title="@string/filterPopular"
+    	android:icon="@android:drawable/star_on"
+        app:showAsAction="always"/>
+    <item android:id="@+id/showSettings"
+    	android:title="@string/robozzle_settings"
+    	android:icon="@android:drawable/ic_menu_preferences"
+    />
+	<item android:id="@+id/openCustomPuzzle"
+		android:title="@string/jump_to_puzzle" />
+    <item
+        android:id="@+id/checkAchievements"
+        android:title="@string/checkAchievements"
+        />
+	<item
+		android:id="@+id/about"
+		android:title="@string/about"/>
+</menu>

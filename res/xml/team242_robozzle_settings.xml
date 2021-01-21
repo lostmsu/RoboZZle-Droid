@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+		xmlns:android="http://schemas.android.com/apk/res/android"
+
+		android:title="@string/robozzle_settings"
+		android:key="robozzle_settings">
+    
+    <PreferenceCategory android:title="@string/credential_settings">
+    	<EditTextPreference android:key="login_setting"
+    		android:title="@string/login_setting"
+    		android:summary="@string/login_summary"/>
+    	<EditTextPreference android:key="password"
+    		android:title="@string/password"
+    		android:summary="@string/password_summary"
+    		android:password="true" />
+    </PreferenceCategory>
+    
+    <CheckBoxPreference android:key="submit_solutions"
+    	android:defaultValue="true"
+    	android:title="@string/auto_solution_submit"
+    	android:summary="@string/solution_submit_summary" />
+
+	<CheckBoxPreference android:key="rob_ai_telemetry_enabled"
+	                    android:defaultValue="false"
+	                    android:title="@string/rob_ai_telemetry_title"
+	                    android:summary="@string/rob_ai_telemetry_summary" />
+
+	<ListPreference android:key="thumbnail_memory_usage"
+		android:defaultValue="0"
+		android:title="@string/thumbnail_memory_title"
+		android:summary="@string/thumbnail_memory_summary"
+		android:entries="@array/thumbnailMemoryModes"
+		android:entryValues="@array/thumbnailMemoryValues"/>
+</PreferenceScreen>

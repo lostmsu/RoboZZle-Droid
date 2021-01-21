@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" android:padding="@dimen/abc_dialog_padding_material"
+              android:gravity="center">
+
+    <TextView android:layout_width="fill_parent" android:id="@+id/achievementWonTitle" android:layout_height="wrap_content" android:text="@string/newachievements"
+              style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+    <ListView android:layout_width="fill_parent"
+              android:layout_height="wrap_content" android:id="@+id/achievementsWon"
+              android:layout_weight="1" android:paddingTop="4dp" android:paddingBottom="4dp">
+    </ListView>
+
+    <TextView android:layout_width="fill_parent" android:id="@+id/achievementLostTitle" android:layout_height="wrap_content" android:text="@string/lostachievements"
+              style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+    <ListView android:layout_width="fill_parent"
+              android:layout_height="wrap_content" android:id="@+id/achievementsLost"
+              android:layout_weight="1" android:paddingTop="4dp" android:paddingBottom="4dp">
+    </ListView>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true" android:gravity="center"
+                  android:layout_marginTop="@dimen/abc_dialog_padding_top_material">
+        <Button android:text="@string/openAchievements"
+                android:id="@+id/openAchievements"
+                android:minWidth="@dimen/abc_action_button_min_width_material" android:gravity="center"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"
+        />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="MainMenu" parent="@android:style/TextAppearance.Large">
+	</style>
+	
+	<declare-styleable name="com.team242.android.widget.PieProgress">
+		<attr name="progress" format="float"/>
+		<attr name="progress_color" format="integer"/>
+	</declare-styleable>
+</resources>

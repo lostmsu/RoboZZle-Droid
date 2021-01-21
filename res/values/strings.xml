@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+
+    <string name="app_name">RoboZZle Droid</string>
+    <string name="login">Sign In</string>
+	<string name="register">Register</string>
+	<string name="registerInsteadOfLoginCheckbox">Register</string>
+    <string name="solvedPuzzles">Solved puzzles: </string>
+    <string name="unsolvedPuzzles">Unsolved puzzles: </string>
+    <string name="unsolvedName">Unsolved RoboZZles</string>
+    <string name="solverName">RoboZZle Puzzle</string>
+	<string name="detailsName">RoboZZle Details</string>
+    <string name="updatePuzzles">Download puzzles</string>
+    <string name="shareSolutions">Share solutions</string>
+    <string name="syncPopup">sync</string>
+    <string name="syncError">An error occurred while synchronizing with RoboZZle.com. Try again later manually</string>
+	<string name="telemetrySubmitIoError">Can\'t submit telemetry due to a network error.</string>
+	<string name="telemetrySubmitUnknownError">Can\'t submit telemetry due to an unknown error.</string>
+	<string name="synchronizing">synchronizing…</string>
+    <string name="alreadySynchronizing">Already synchronizing. This could take a while.</string>
+    <string name="syncStarted">Sync is started. This could take a while. You can solve new puzzles as soon as they appear.</string>
+    <string name="syncComplete">Sync complete.</string>
+    <string name="commandDialog">Edit a command</string>
+    <string name="noPuzzles">No puzzles found. Use Menu -> Download puzzles to download them from the Internet.</string>
+    <string name="win">Congratulations! You win!</string>
+    <string name="lostFall">The robot left colored cells. You lost. Try again.</string>
+    <string name="lostStackOverflow">The stack overflowed. You lost. Try again.</string>
+    <string name="lostProgramEnded">No more instructions to execute. You lost. Try again.</string>
+	<string name="lostOutOfSteps">Step limit reached. You lost. Try again.</string>
+    <string name="cantModifyWhileRunning">Can\'t modify the program while running</string>
+    <string name="filterPopular">Only popular</string>
+    <string name="filterSolved">Show solved</string>
+	<string name="jump_to_puzzle">Jump To …</string>
+	<string name="prompt_puzzle_id">Enter a puzzle id:</string>
+	<string name="invalidPuzzleID">Invalid puzzle ID</string>
+    <string name="checkAchievements">Achievements</string>
+	<string name="achievementsChangeTitle">Achievements</string>
+	<string name="openAchievements">Open Achievements</string>
+	<string name="authorDetail">By: %1$s</string>
+	<string name="dateDetail">Date: %1$s</string>
+    <string name="authorText">difficulty: %2$d; by %1$s</string>
+	<string name="forumLink">ID: &lt;a href=\'http://www.robozzle.com/forums/thread.aspx?puzzle=%1$d\'&gt;%1$d&lt;/a&gt; (click to view discussion)</string>
+    <string name="unknownInternalError">Unknown internal error occurred. Reporting…</string>
+    <string name="help">Help</string>
+	<string name="details">Puzzle Info</string>
+    <string name="clearCode">Clear code</string>
+    <string name="loadSolution">My solution</string>
+    <string name="noSolution">No solution to this puzzle stored locally</string>
+	<string name="noDescription">no description</string>
+	<string name="unknown">unknown</string>
+	<string name="lowMemMode">Limited memory mode is enabled for thumbnails. See settings for options.</string>
+	<string name="lowMem">Not enough memory. Check thumbnail settings.</string>
+    
+    <string name="robozzle_settings">Settings</string>
+    <string name="login_setting">Login</string>
+    <string name="login_summary">Enter your login to RoboZZle.com</string>
+    <string name="password">Password</string>
+    <string name="password_summary">Enter your password to RoboZZle.com</string>
+    <string name="credential_settings">RoboZZle.com credentials</string>
+	<string name="email">Email</string>
+
+	<string name="thumbnail_memory_title">Thumbnail memory usage</string>
+	<string name="thumbnail_memory_summary">Controls how puzzle thumbnails use memory</string>
+    
+    <string name="auto_solution_submit">Automatically submit solutions</string>
+    <string name="solution_submit_summary">Submit solution right after solving</string>
+
+	<string name="rob_ai_telemetry_title">Participate in Rob AI research</string>
+	<string name="rob_ai_telemetry_summary">Submit every single step towards puzzle solution to help our AI research</string>
+    
+    <string name="loginCantParseServerResponse">Login failed: can not parse server response.</string>
+	<string name="loginOperationNotSupportedByClient">Login failed: your device is not compatible.</string>
+    <string name="loginHashNotSupported">Login failed: your device does not support hash algorithm.</string>
+    <string name="loginInvalidCredentials">Login failed: incorrect user name or password.</string>
+    <string name="robozzleComIOError">Contacting RoboZZle.com failed</string>
+    <string name="solutionsSynchronized">Sharing complete.</string>
+    <string name="provideLogin">To synchronize solutions, set your credentials to RoboZZle.com in settings, then start sync again.</string>
+    
+    <string name="historyLoadFail">History loading failed. Be careful, history may work incorrectly.</string>
+	<string name="puzzleLoadFail">Can\'t load the puzzle. The incident will be reported.</string>
+    
+    <string name="field">Game Field</string>
+    <string name="fieldDescription">The game field is a 16x12 cells rectangle. Each cell may be colored with one of three colors: red, green, or blue.
+      Each cell may contain an item. Your goal is to collect all the items with a robot. Beware of non-colored cells.</string>
+    <string name="program">Robot Program</string>
+    <string name="programDescription">A robot is placed somewhere on the field. It is initially directed either up, right, down or left.
+      You can control the robot with a program. A program consists of up to 5 functions depending on the puzzle. Functions are called F1, F2, F3, F4 and F5.
+      Each function consists of up to 10 instructions for the robot. The instructions are right and left turns, step forward, cell painting (changes the color of the cell which the robot is currently located in),
+      and function call. There are unconditional instructions which are executed always, and conditional ones which are executed only if robot is located in a cell with the same color.
+      Function calls are recursive. After a function is completed, control is switched back to the next instruction of the caller.
+      Your program does not need to end. To solve a puzzle it is enough to collect all the items.</string>
+    <string name="controls">Controls</string>
+    <string name="controlsDescription">Tap an instruction to change or clear it. 
+    Start and control your program execution with play, pause, step and rewind buttons.
+    Hold a finger on the game field to speed up running. Your current solution progress is automatically saved.</string>
+    <string name="recursion">Recursion</string>
+    <string name="recursionDescription">There are some tricks that can be done with recursion. It is up to you now to figure them out.</string>
+    
+    <string name="mainMenuTextSize">32sp</string>
+	<string name="emptyProgram">The robot program is empty. Add commands by clicking numbered cells.</string>
+    
+    <string name="open_helper_classname">com.team242.robozzle.RobozzleOffline</string>
+    <string name="step">step</string>
+
+	<string name="donate">Donate π$</string>
+	<string name="donate_summary">donate from 1$ to 256$ and remove ads</string>
+    <string name="donate_nobilling">Your Google Services are outdated</string>
+	<string name="rateDifficulty">Please, rate puzzle difficulty</string>
+	<string name="like">I like this puzzle!</string>
+	<string name="editSolution">Improve</string>
+	<string name="puzzles">OK</string>
+	<string-array name="donations">
+		<item>1$</item>
+		<item>φ$</item>
+		<item>2$</item>
+		<item>e$</item>
+		<item>π$</item>
+		<item>4$</item>
+        <item>8$</item>
+		<item>16$</item>
+		<item>256$</item>
+	</string-array>
+
+	<string-array name="donationValues">
+		<item>100</item>
+		<item>162</item>
+		<item>200</item>
+		<item>272</item>
+		<item>314</item>
+		<item>400</item>
+        <item>800</item>
+		<item>1600</item>
+		<item>25600</item>
+	</string-array>
+
+	<string-array name="thumbnailMemoryModes">
+		<item>Normal</item>
+		<item>Limited</item>
+		<item>Disable</item>
+	</string-array>
+
+	<string-array name="thumbnailMemoryValues">
+		<item>0</item>
+		<item>1</item>
+		<item>-1</item>
+	</string-array>
+
+	<string name="newachievements">(!) New achievements:</string>
+	<string name="lostachievements">:( Lost achievements:</string>
+	<string name="diligentStudentTitle">Diligent Student</string>
+	<string name="diligentStudentDescription">Solve the tutorial (difficulty &lt;= 10)</string>
+	<string name="cowardTitle">Coward</string>
+	<string name="cowardDescription">Run away before even starting to try solving</string>
+	<string name="braveTitle">Brave Heart</string>
+	<string name="braveDescription">Beat all puzzles you were afraid of</string>
+	<string name="thatWasEasyTitle">That was easy</string>
+	<string name="thatWasEasyDescription">Solve 10 easy puzzles (difficulty &lt;= 45)</string>
+	<string name="blackAndBlueTitle">No red or green</string>
+	<string name="blackAndBlueDescription">Solve all blue puzzles</string>
+	<string name="medicTitle">Medic</string>
+	<string name="medicDescription">Solve all cross-like puzzles</string>
+	<string name="spirallyTitle">Spirally</string>
+	<string name="spirallyDescription">Drive the robot across popular spirals</string>
+	<string name="igoroTitle">Thank you, igoro!</string>
+	<string name="igoroDescription">Solve all puzzles made by the inventor of RoboZZle</string>
+	<string name="magellanTitle">Magellan</string>
+	<string name="magellanDescription">Explore the World!</string>
+	<string name="cloneMasterTitle">Clone Master</string>
+	<string name="cloneMasterDescription">Solve cloning puzzles
+		(Reflection, Replication Engine, and 960 on blue)</string>
+	<string name="recursionManTitle">Recursion Man</string>
+	<string name="recursionManDescription">Beat all popular puzzles with difficulty 75+</string>
+	<string name="halfWayTitle">Half way</string>
+	<string name="halfWayDescription">Solve at least half of popular puzzles</string>
+	<string name="guruTitle">RoboGuru</string>
+	<string name="guruDescription">Solve all popular puzzles</string>
+	<string name="roboNerdTitle">RoboNerd</string>
+	<string name="roboNerdDescription">Solve 256+ puzzles</string>
+	<string name="pnpTitle">P = NP</string>
+	<string name="pnpDescription">Solve all puzzles</string>
+	<string name="answerTitle">The answer to Life, Universe, and Everything</string>
+	<string name="answerDescription">Solve all popular puzzles with difficulty 42</string>
+	<string name="aboutRoboZZleDroid">About RoboZZle Droid</string>
+	<string name="about">About</string>
+	<string name="aboutText"><div>  RoboZZle Droid is a port of Igor Ostrovsky game.</div>
+		\n\n<div>  Achievement icons are modified icons, made by
+			<a href="http://www.freepik.com" title="Freepik">Freepik</a>,
+			<a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>,
+			<a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a>,
+			<a href="http://www.flaticon.com/authors/plainicon" title="Plainicon">Plainicon</a>
+			from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>; is licensed by
+			<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+		</div>
+	</string>
+	<string name="app_version">Game version</string>
+
+	<string name="researchDialogTitle">Participate in AI research</string>
+	<string name="researchDialogDescription">Share the steps you take to solve RoboZZles with an AI research project.
+		The goal is to build a fully automated solver for RoboZZles. We will analyze what does it take for you to solve puzzles,
+		and improve our algorithm accordingly.</string>
+	<string name="researchDialogTermsTitle">\n<b>Terms and conditions</b>\n</string>
+	<string name="researchDialogTerms">1. You allow submission of puzzle solution telemetry to Lost Tech LLC.
+		\nSubmitted telemetry can include:
+		\n- opening puzzle
+		\n- program editing steps (editing commands, undo, redo, etc.)
+		\n- running, stopping, pausing, and stepping with a robot
+		\n- timestamps for all actions above
+		\n- your login and hashed password for RoboZZle.com
+		\n
+		\n2. You allow Lost Tech LLC to use your login and hashed password for RoboZZle.com
+		to verify that you have a valid account on RoboZZle.com.
+		Lost Tech LLC will not store this data or share it with 3rd parties.
+		\n
+		\n3. You allow all other telemetry listed in 1. to be used for the purpose of research in artificial intelligence.
+		\n
+		\n4. You allow Lost Tech LLC royalty-free use of this data, and any derived products of the research for any commercial purpose,
+		including sharing with 3rd parties.
+	</string>
+	<string name="acceptTerms">Accept</string>
+	<string name="declineTerms">Decline</string>
+	<string name="must_sign_in">You must sign in to submit telemetry</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.team242.robozzle" android:versionCode="54"
+	android:versionName="0.4.2.48" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:installLocation="auto"
+	>
+	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="24" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name" android:name="RoboZZleApplication"
+		android:theme="@style/Theme.AppCompat.NoActionBar"
+		android:allowBackup="true">
+
+        <activity android:name=".UnsolvedPuzzles" android:label="@string/app_name"
+			android:theme="@style/Theme.AppCompat.NoActionBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Solver" android:label="@string/solverName"
+			android:theme="@style/Theme.AppCompat.NoActionBar" />
+		<activity android:name=".PuzzleDetails" android:label="@string/detailsName"
+			android:theme="@style/Theme.AppCompat"/>
+
+		<activity
+            android:label="@string/robozzle_settings"
+            android:exported="true" android:name="com.team242.robozzle.RoboZZleSettings">
+        </activity>
+
+        <activity android:name=".Achievements" android:label="RoboZZle Achievements"
+                  android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+		<activity android:name=".AboutActivity" android:label="@string/aboutRoboZZleDroid"/>
+	</application>
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>

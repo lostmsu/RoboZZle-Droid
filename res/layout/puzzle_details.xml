@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:padding="4dp"
+		android:orientation="vertical">
+	<TextView android:id="@+id/subtitle" android:textSize="16sp"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		tools:text="Sample puzzle description" />
+	<TextView android:id="@+id/author" android:textSize="20sp"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		tools:text="Author: igoro"/>
+	<TextView android:id="@+id/submitDate" android:textSize="20sp"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		tools:text="Submitted: 10/10/2010"/>
+	<TextView android:id="@+id/forumLink" android:clickable="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		tools:text="Discuss on forum"/>
+</LinearLayout>

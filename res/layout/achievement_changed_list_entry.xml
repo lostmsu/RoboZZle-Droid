@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	android:orientation="horizontal">
+	<ImageView android:layout_width="80dp" android:layout_height="60dp"
+               android:padding="8dp"
+               android:scaleType="centerInside"
+               android:id="@+id/achievementIcon"
+               android:src="@android:drawable/star_big_off"/>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical">
+		<TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:singleLine="true"
+			android:padding="2dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Achievement Title"
+			android:id="@+id/achievementTitle"/>
+
+		<TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:padding="1dp"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="achievement description"
+			android:id="@+id/achievementDescription"/>
+
+	</LinearLayout>
+</LinearLayout>

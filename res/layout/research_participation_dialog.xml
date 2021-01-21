@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/abc_dialog_padding_material" android:paddingBottom="24dp" android:paddingRight="24dp">
+
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/researchDialogDescription"
+			android:layout_gravity="center_horizontal"/>
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/researchDialogTermsTitle"
+			android:layout_gravity="center_horizontal"/>
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_gravity="center_horizontal">
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/researchDialogTerms"
+				android:layout_marginBottom="@dimen/abc_button_padding_vertical_material"/>
+	</ScrollView>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/abc_button_padding_vertical_material">
+		<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:minHeight="@dimen/abc_action_button_min_height_material"
+				android:minWidth="@dimen/abc_action_button_min_width_material"
+				android:text="@string/acceptTerms"
+				android:id="@+id/accept" android:layout_weight="1" android:background="#ff99cc00"
+				android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"/>
+		<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:minHeight="@dimen/abc_action_button_min_height_material"
+				android:minWidth="@dimen/abc_action_button_min_width_material"
+				android:text="@string/declineTerms"
+				android:id="@+id/decline" android:layout_weight="1" android:background="#ffff4444"
+				android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"/>
+	</LinearLayout>
+</LinearLayout>

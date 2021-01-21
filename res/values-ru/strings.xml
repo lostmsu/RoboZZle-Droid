@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="app_name">RoboZZle Droid</string>
+    <string name="login">Войти</string>
+    <string name="solvedPuzzles">Решённые: </string>
+    <string name="unsolvedPuzzles">Нерешённые: </string>
+    <string name="unsolvedName">Нерешённые уровни</string>
+    <string name="solverName">Уровень RoboZZle</string>
+    <string name="detailsName">Дополнительная информация</string>
+    <string name="updatePuzzles">Загрузить уровни</string>
+    <string name="shareSolutions">Синхронизировать решения</string>
+    <string name="syncPopup">синхронизация</string>
+    <string name="syncError">Произошла ошибка синхронизации с RoboZZle.com. Попробуйте повторить позже.</string>
+    <string name="synchronizing">синхронизирую…</string>
+    <string name="alreadySynchronizing">Уже синхронизирую. Будьте терпеливее!</string>
+    <string name="syncStarted">Синхронизация может занять некоторое время. Вы можете приступать к решению уровней по мере появления их в списке.</string>
+    <string name="syncComplete">Синхронизация окончена.</string>
+    <string name="commandDialog">Изменение команды</string>
+    <string name="noPuzzles">Задачи недоступны. Выберите \'Загрузить уровни\', чтобы загрузить их из Сети.</string>
+    <string name="win">Поздравляю! Задача выполнена</string>
+    <string name="lostFall">Робот покинул цветные клетки. Попробуйте снова.</string>
+    <string name="lostStackOverflow">Стэк вызовов переполнился. Попробуйте снова.</string>
+    <string name="lostProgramEnded">Программа закончилась. Попробуйте снова.</string>
+    <string name="cantModifyWhileRunning">Нельзя модифицировать программу во время движения</string>
+    <string name="filterPopular">Только популярные</string>
+    <string name="filterSolved">Показать решённые</string>
+    <string name="jump_to_puzzle">Перейти к …</string>
+    <string name="prompt_puzzle_id">Введите номер задачи:</string>
+    <string name="invalidPuzzleID">Задача с таким ID не найдета</string>
+    <string name="checkAchievements">Достижения</string>
+    <string name="authorDetail">Автор: %1$s</string>
+    <string name="dateDetail">Загружена: %1$s</string>
+    <string name="authorText">сложность: %2$d; автор: %1$s</string>
+    <string name="forumLink">ID: &lt;a href=\'http://www.robozzle.com/forums/thread.aspx?puzzle=%1$d\'&gt;%1$d&lt;/a&gt; (кликните, чтобы открыть обсуждение)</string>
+    <string name="unknownInternalError">Неизвестная внутренняя ошибка. Сообщаю куда следует …</string>
+    <string name="help">Помощь</string>
+    <string name="details">Информация о задаче</string>
+    <string name="clearCode">Очистить программу</string>
+    <string name="loadSolution">Моё решение</string>
+    <string name="noSolution">Решение этой задачи недоступно на этом устройстве</string>
+    <string name="noDescription">нет описания</string>
+    <string name="unknown">неизвестно</string>
+    <string name="lowMemMode">Включен режим экономии памяти. Откройте настройки для выбора вариантов.</string>
+
+    <string name="robozzle_settings">Настройки</string>
+    <string name="login_setting">Пользователь</string>
+    <string name="login_summary">Введите имя пользователя RoboZZle.com</string>
+    <string name="password">Пароль</string>
+    <string name="password_summary">Введите пароль RoboZZle.com</string>
+    <string name="credential_settings">Доступ к RoboZZle.com</string>
+
+    <string name="thumbnail_memory_title">Память</string>
+    <string name="thumbnail_memory_summary">Настройка режима использования памяти пиктограммами задач</string>
+
+    <string name="auto_solution_submit">Автоматически посылать решения</string>
+    <string name="solution_submit_summary">Включите, чтобы сразу посылать решения на RoboZZle.com</string>
+
+    <string name="loginCantParseServerResponse">Вход невозможен: формат ответа сервера изменился.</string>
+    <string name="loginHashNotSupported">Вход невозможен: на вашем устройстве не поддерживается необходимый алгоритм шифрования.</string>
+    <string name="loginInvalidCredentials">Вход невозможен: неверное имя пользователя или пароль.</string>
+    <string name="robozzleComIOError">Сервер RoboZZle.com недоступен</string>
+    <string name="solutionsSynchronized">Решения успешно отправлены</string>
+    <string name="provideLogin">Чтобы синхронизировать решения, введите информацию для входа на RoboZZle.com в настройках, затем вновь запустите синхронизацию.</string>
+
+    <string name="historyLoadFail">Почему-то не удалось загрузить историю изменений. Осторожно, возможно она полностью недоступна.</string>
+    <string name="puzzleLoadFail">Не удаётся загрузить задачу. Об этом будет доложено куда следует.</string>
+
+    <string name="field">Игровое поле</string>
+    <string name="fieldDescription">Игровое поле - это прямоугольник 16 на 12.
+        Каждая его клетка может быть раскрашена в один из трёх цветов: красный, синий, или зелёный.
+        В некоторых клетках лежат предметы. Цель вашей программы для робота - собрать все эти предметы.
+        Держитесь подальше от чёрных клеток.</string>
+    <string name="program">Программа робота</string>
+    <string name="programDescription">Каждая задача определяет начальное положение робота и его направление (вверх, вниз, налево, направо).
+        Вы контролируете робота с помощью программы. В программе разрешено до 5 функций, в зависимости от задачи.
+        Функции называются F1, F2, F3, F4 и F5.
+        В каждой функции может быть до 10 инструкций для робота.
+        Доступные инструкции - правый и левый повороты, шаг вперёд, перекрашивание клетки под роботом в заданный цвет и вызов функции.
+        Инструкции с серым фоном выполняются всегда. Инструкции с цветным фоном выполняются только на клетках соответствующего цвета.
+        На других клетках эти инструкции пропускаются.
+        Возможны рекурсивные вызовы функций. После того, как все инструкции в функции выполняются, управление переходит
+        назад к следующей инструкции в вызывающей функции.
+        Программа не обязана завершаться. Решение будет засчитано как только робот соберёт все предметы.</string>
+    <string name="controls">Управление</string>
+    <string name="controlsDescription">Нажмите на инструкцию для того, чтобы изменить её или удалить.
+        Запускайте и контролируйте управление программы кнопками воспроизведения.
+        Коснитесь и удерживайте поле, чтобы увеличить скорость перемещения робота.
+        Программа для робота сохраняется автоматически.</string>
+    <string name="recursion">Рекурсия - см. рекурсия</string>
+    <string name="recursionDescription">Есть несколько трюков, которые можно осуществить с помощью рекурсии.
+        Предоставлю Вам возможность придумать их самостоятельно.</string>
+
+    <string name="mainMenuTextSize">32sp</string>
+    <string name="emptyProgram">Программа пуста. Добавьте команды нажатиями на пронумерованные клетки.</string>
+
+    <string name="open_helper_classname">com.team242.robozzle.RobozzleOffline</string>
+    <string name="step">шаг</string>
+
+    <string name="donate">Пожертвовать π$</string>
+    <string name="donate_summary">Пожертвовать от 1$ до 256$ и удалить рекламу</string>
+    <string name="donate_nobilling">Google Services на вашем устройстве устарели</string>
+    <string name="rateDifficulty">Пожалуйста, оценить сложность задачи</string>
+    <string name="like">Мне понравилась задача!</string>
+    <string name="editSolution">Улучшить</string>
+    <string name="puzzles">OK</string>
+    <string-array name="donations">
+        <item>1$</item>
+        <item>φ$</item>
+        <item>2$</item>
+        <item>e$</item>
+        <item>π$</item>
+        <item>4$</item>
+        <item>8$</item>
+        <item>16$</item>
+        <item>256$</item>
+    </string-array>
+
+    <string-array name="donationValues">
+        <item>100</item>
+        <item>162</item>
+        <item>200</item>
+        <item>272</item>
+        <item>314</item>
+        <item>400</item>
+        <item>800</item>
+        <item>1600</item>
+        <item>25600</item>
+    </string-array>
+
+    <string-array name="thumbnailMemoryModes">
+        <item>По умолчанию</item>
+        <item>Мало памяти</item>
+        <item>Крайне мало памяти</item>
+    </string-array>
+
+    <string-array name="thumbnailMemoryValues">
+        <item>0</item>
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="newachievements">(!) Новые достижения:</string>
+    <string name="lostachievements">:( Потерянные достижения:</string>
+    <string name="diligentStudentTitle">Прилежный ученик</string>
+    <string name="diligentStudentDescription">Пройдите обучение (сложность &lt;= 10)</string>
+    <string name="cowardTitle">Трус!</string>
+    <string name="cowardDescription">Закройте задачу, не предпринимая попыток решения</string>
+    <string name="braveTitle">Храброе Сердце</string>
+    <string name="braveDescription">Поборите все задачи, которых Вы раньше боялись</string>
+    <string name="thatWasEasyTitle">Слишком просто</string>
+    <string name="thatWasEasyDescription">Решите 10 простых задач (сложность &lt;= 45)</string>
+    <string name="blackAndBlueTitle">Без красного и зелени</string>
+    <string name="blackAndBlueDescription">Решите все задачи, в которых есть только синие клетки</string>
+    <string name="medicTitle">Доктор</string>
+    <string name="medicDescription">Решите все крестообразные задачи</string>
+    <string name="spirallyTitle">Завертелось</string>
+    <string name="spirallyDescription">Проведите робота по популярным спиралям</string>
+    <string name="igoroTitle">Спасибо, igoro!</string>
+    <string name="igoroDescription">Решите все задачи, добавленные создателем идеи RoboZZle</string>
+    <string name="magellanTitle">Магеллан</string>
+    <string name="magellanDescription">Explore the World!</string>
+    <string name="cloneMasterTitle">Мастер клонирования</string>
+    <string name="cloneMasterDescription">Решите задачи на клонирование
+        (Reflection, Replication Engine и 960 on blue)</string>
+    <string name="recursionManTitle">Рекурсивный человек</string>
+    <string name="recursionManDescription">Поборите все популярные задачи сложности 75+</string>
+    <string name="halfWayTitle">Полураспад</string>
+    <string name="halfWayDescription">Решите половину популярных задач</string>
+    <string name="guruTitle">Робозоид</string>
+    <string name="guruDescription">Решите все популярные задачи</string>
+    <string name="roboNerdTitle">Байтмэн</string>
+    <string name="roboNerdDescription">Решите 256+ задач</string>
+    <string name="pnpTitle">P = NP</string>
+    <string name="pnpDescription">Решите все задачи</string>
+    <string name="answerTitle">Ответ на главный вопрос Жизни, Вселенной и Всего Такого</string>
+    <string name="answerDescription">Решите все популярные задачи со сложностью 42</string>
+    <string name="about">Об игре</string>
+    <string name="aboutRoboZZleDroid">О RoboZZle Droid</string>
+    <string name="achievementsChangeTitle">Достижения</string>
+    <string name="aboutText">
+        <div>RoboZZle Droid - порт игры Igor Ostrovsky.</div>
+        \n\n
+        <div>Иконки достижений - модифицированные иконки, сделанные
+            <a href="http://www.freepik.com" title="Freepik">Freepik</a>,
+            <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>,
+            <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a>,
+            <a href="http://www.flaticon.com/authors/plainicon" title="Plainicon">Plainicon</a>
+            с сайта <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>; по лицензии
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+        </div>
+    </string>
+    <string name="openAchievements">Все достижения</string>
+    <string name="lostOutOfSteps">Достигнут лимит шагов. Попробуйте снова.</string>
+    <string name="app_version">Версия игры</string>
+    <string name="acceptTerms">Согласиться</string>
+    <string name="declineTerms">Отказаться</string>
+    <string name="email">Электронная почта</string>
+    <string name="loginOperationNotSupportedByClient">Вход невозможен: ваше устройство не поддерживается.</string>
+    <string name="lowMem">Недостаточно памяти. Зайдите в настройки.</string>
+    <string name="must_sign_in">Вы должны войти, чтобы мы смогли отправить решения</string>
+    <string name="register">Зарегистрировать</string>
+    <string name="registerInsteadOfLoginCheckbox">Регистрация</string>
+    <string name="researchDialogDescription">Отправьте свои решения задачек RoboZZle нашему исследовательскому проекту,
+        занимающемуся разработкой ИИ.
+        Цель проекта - создание полностью автоматического решателя для RoboZZle. Мы проанализируем, какие шаги были
+        предприняты
+        во время решения, в каких местах пришлось подумать, и постараемся улучшить наш алгоритм.
+    </string>
+
+    <string name="researchDialogTerms">1. Вы разрешаете отправку шагов решения задачек Lost Tech LLC.
+        \nПередаваемые данные:
+        \n- открытие задачки
+        \n- редактирование программы робота (редактирование комманд, отмена, повтор, и т.д.)
+        \n- запуск, остановка, приостановка и пошаговое выполнение программы роботом
+        \n- отметки времени для всех перечисленных действий
+        \n- имя пользователя и защищённый пароль для RoboZZle.com
+        \n
+        \n2. Вы разрешаете Lost Tech LLC использовать имя пользователя и пароль для RoboZZle.com, чтобы авторизовывать Вас на RoboZZle.com.
+        Lost Tech LLC не будет хранить эти данные или делиться ими с посторонними.
+        \n
+        \n3. Вы разрешаете Lost Tech LLC использовать все остальные данные, перечисленные в 1., в исследованиях в области искуственного интеллекта.
+        \n
+        \n4. Вы разрешаете Lost Tech LLC использовать эти данные (за исключением имени пользователя и защищённого пароля)
+        и любые результаты исследования без ограничений в любых коммерческих целях, включая продажу третьим лицам.
+    </string>
+    <string name="researchDialogTermsTitle">\n<b>Условия и положения</b>\n</string>
+    <string name="researchDialogTitle">Участвуйте в исследовании</string>
+    <string name="rob_ai_telemetry_summary">Поделитесь информацией о том, как Вы решили задачку в RoboZZle с нашим
+        исследовательским проектом в области ИИ</string>
+    <string name="rob_ai_telemetry_title">Поучаствуйте в исследовании Rob AI</string>
+    <string name="telemetrySubmitIoError">Не удалось отправить данные из-за ошибки сети</string>
+    <string name="telemetrySubmitUnknownError">Не удалось отправить данные из-за неизвестной ошибки</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<declare-styleable name="com.team242.android.widget.ProportionalLayout">
+		<attr name="width_weight" format="integer"/>
+		<attr name="height_weight" format="integer"/>
+	</declare-styleable>
+</resources>

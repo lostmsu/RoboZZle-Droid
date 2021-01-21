@@ -1,0 +1,30 @@
+Programs:
+
+g: F2; _: FWD; r: TurnR; _: F1; EMPTY
+b: F1; _: FWD; r: TurnL; _: F2; EMPTY
+g2_FrR_1|b1_FrL_2||||
+
+g: F2; EMPTY; _: FWD; r: TurnR; _: F1
+b: F1; EMPTY; _: FWD; r: TurnL; _: F2
+g2_FrR_1|b1_FrL_2||||
+
+_: FWD; r: TurnR; r: Blue; _: F1
+_FrRrb_1|||||
+
+little r means 'paint red'
+
+it seems that empty cells are ignored
+vertical bar after every function (always 5 bars currently)
+
+http://www.robozzle.com/RobozzleService.svc
+
+RobozzleService Service
+
+
+You have created a service.
+
+To test this service, you will need to create a client and use it to call the service. You can do this using the svcutil.exe tool from the command line with the following syntax:
+
+svcutil.exe http://www.robozzle.com/RobozzleService.svc?wsdl
+
+Items: # - no color, . - empty cell, * - star

@@ -1,0 +1,10 @@
+bin/
+classes/
+gen/
+RoboZZle Droid.apk
+*.iws
+.gradle/gradle-wrapper.jar
+.gradle/*/taskArtifacts/**
+.idea/
+build/
+Thumbs.db

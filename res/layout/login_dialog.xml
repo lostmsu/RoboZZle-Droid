@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/abc_dialog_padding_material" android:paddingBottom="@dimen/abc_dialog_padding_material" android:paddingRight="@dimen/abc_dialog_padding_material">
+
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:id="@+id/loginParameters"
+			android:layout_gravity="center_horizontal">
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="@string/login_setting"
+					android:id="@+id/textView"
+					android:layout_marginBottom="@dimen/abc_button_padding_vertical_material"/>
+			<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/login"
+					android:layout_marginBottom="@dimen/abc_button_padding_vertical_material"
+					android:layout_marginTop="@dimen/abc_button_padding_vertical_material"/>
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="@string/password"
+					android:id="@+id/textView2" android:layout_marginTop="@dimen/abc_button_padding_vertical_material"
+					android:layout_marginBottom="@dimen/abc_button_padding_vertical_material"/>
+			<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textPassword"
+					android:ems="10"
+					android:id="@+id/password"
+					android:layout_marginBottom="@dimen/abc_button_padding_vertical_material"
+					android:layout_marginTop="@dimen/abc_button_padding_vertical_material"/>
+			<CheckBox
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/registerInsteadOfLoginCheckbox"
+					android:id="@+id/registerCheck" android:layout_marginTop="@dimen/abc_button_padding_vertical_material"
+					android:layout_marginBottom="@dimen/abc_button_padding_vertical_material"/>
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="@string/email"
+					android:id="@+id/emailTitle"
+					android:layout_marginBottom="@dimen/abc_button_padding_vertical_material"
+					android:layout_marginTop="@dimen/abc_button_padding_vertical_material" android:enabled="false"/>
+			<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textEmailAddress"
+					android:ems="10"
+					android:id="@+id/email" android:layout_marginTop="@dimen/abc_button_padding_vertical_material"
+					android:enabled="false"/>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/abc_button_padding_vertical_material">
+		<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:minHeight="@dimen/abc_action_button_min_height_material"
+				android:minWidth="@dimen/abc_action_button_min_width_material"
+				android:text="@string/login"
+				android:id="@+id/signIn" android:layout_weight="1"
+				android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"/>
+		<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:minHeight="@dimen/abc_action_button_min_height_material"
+				android:minWidth="@dimen/abc_action_button_min_width_material"
+				android:text="@string/cancel"
+				android:id="@+id/cancel" android:layout_weight="1"
+				android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"/>
+	</LinearLayout>
+</LinearLayout>
