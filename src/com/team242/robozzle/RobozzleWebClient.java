@@ -11,6 +11,7 @@ import org.ksoap2.serialization.SoapObject;
 import org.ksoap2.serialization.SoapPrimitive;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
+import org.ksoap2.transport.Transport;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
@@ -58,7 +59,7 @@ public class RobozzleWebClient {
 	static final String NAMESPACE = "http://tempuri.org/";
 	static final String URL = "http://www.robozzle.com/RobozzleService.svc";
 
-	final HttpTransportSE transport;
+	final Transport transport;
 	final SoapSerializationEnvelope soapEnvelop;
 
 	public RobozzleWebClient() {
