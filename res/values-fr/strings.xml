@@ -175,6 +175,8 @@
 	<string name="aboutText">
 		<div>RoboZZle Droid est un port de jeu de Igor Ostrovsky.</div>
 		\n\n
+		<div><a href="https://github.com/lostmsu/RoboZZle-Droid">GitHub</a>.</div>
+		\n\n
 		<div>Icônes d\'accomplissements sont des icônes modifiées, réalisées par
 			<a href="http://www.freepik.com" title="Freepik">Freepik</a>,
 			<a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>,

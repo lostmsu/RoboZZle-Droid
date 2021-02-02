@@ -185,6 +185,7 @@
 	<string name="aboutRoboZZleDroid">About RoboZZle Droid</string>
 	<string name="about">About</string>
 	<string name="aboutText"><div>  RoboZZle Droid is a port of Igor Ostrovsky game.</div>
+		\n\n<div>  This is an Open Source project. See <a href="https://github.com/lostmsu/RoboZZle-Droid">GitHub</a></div>
 		\n\n<div>  Achievement icons are modified icons, made by
 			<a href="http://www.freepik.com" title="Freepik">Freepik</a>,
 			<a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>,

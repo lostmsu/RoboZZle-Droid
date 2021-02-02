@@ -183,6 +183,8 @@
     <string name="aboutText">
         <div>RoboZZle Droid - порт игры Igor Ostrovsky.</div>
         \n\n
+        <div>Проект с открытым исходным кодом на <a href="https://github.com/lostmsu/RoboZZle-Droid">GitHub</a>.</div>
+        \n\n
         <div>Иконки достижений - модифицированные иконки, сделанные
             <a href="http://www.freepik.com" title="Freepik">Freepik</a>,
             <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>,
