@@ -408,6 +408,7 @@ public class PuzzleAdapter extends BaseAdapter {
 							pending = toUpdate;
 						} catch (IOException e) {
 							e.printStackTrace();
+							throw e;
 						} catch (XmlPullParserException e) {
 							e.printStackTrace();
 						} catch (ParseException e) {

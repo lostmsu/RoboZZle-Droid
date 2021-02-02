@@ -3,6 +3,7 @@ classes/
 gen/
 RoboZZle Droid.apk
 *.iws
+/.gradle/
 .gradle/gradle-wrapper.jar
 .gradle/*/taskArtifacts/**
 .idea/

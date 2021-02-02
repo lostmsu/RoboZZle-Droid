@@ -2,7 +2,6 @@ buildscript {
     repositories {
         google()
         jcenter()
-        mavenCentral()
         maven { url 'http://ksoap2-android.googlecode.com/svn/m2-repo' }
     }
     dependencies {
@@ -12,14 +11,14 @@ buildscript {
 apply plugin: 'com.android.application'
 
 repositories {
-    mavenCentral()
+    jcenter()
     maven { url 'https://oss.sonatype.org/content/repositories/ksoap2-android-releases/' }
     google()
 }
 
 dependencies {
     compile 'commons-io:commons-io:2.4'
-    compile 'com.google.code.ksoap2-android:ksoap2-android:2.5.1'
+    compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.4'
     compile 'com.j256.ormlite:ormlite-android:4.48'
     compile 'androidx.legacy:legacy-support-v4:1.0.0'
     compile 'androidx.appcompat:appcompat:1.2.0'

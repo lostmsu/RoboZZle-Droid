@@ -10,7 +10,7 @@ import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
 import org.ksoap2.serialization.SoapPrimitive;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
-import org.ksoap2.transport.AndroidHttpTransport;
+import org.ksoap2.transport.HttpTransportSE;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
@@ -58,14 +58,14 @@ public class RobozzleWebClient {
 	static final String NAMESPACE = "http://tempuri.org/";
 	static final String URL = "http://www.robozzle.com/RobozzleService.svc";
 
-	final AndroidHttpTransport transport;
+	final HttpTransportSE transport;
 	final SoapSerializationEnvelope soapEnvelop;
 
 	public RobozzleWebClient() {
 		soapEnvelop = new SoapSerializationEnvelope(SoapEnvelope.VER11);
 		soapEnvelop.dotNet = true;
 
-		transport = new AndroidHttpTransport(URL);
+		transport = new HttpTransportSE(URL);
 		transport.debug = true;
 	}
 
