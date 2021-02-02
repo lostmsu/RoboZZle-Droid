@@ -124,20 +124,23 @@ public class RobozzleWebClient {
 			soapEnvelop.setOutputSoapObject(request);
 
 			transport.call(action(LOG_IN), soapEnvelop);
+
+			soapEnvelop.getResponse();
 		} catch (NoSuchAlgorithmException e){
 			throw new OperationNotSupportedByClientException(e);
 		} catch (XmlPullParserException e){
 			throw new OperationNotSupportedByClientException(e);
 		}
-		boolean success = Boolean.parseBoolean(prim(soapEnvelop.getResponse()).toString()); 
+		SoapObject body = obj(soapEnvelop.bodyIn);
+		boolean success = Boolean.parseBoolean(prim(body.getProperty(0)).toString());
 		
 		if (success){
-			SoapObject solvedLevels = obj(obj(soapEnvelop.bodyIn).getProperty(1));
+			SoapObject solvedLevels = obj(body.getProperty("solvedLevels"));
 			for(int i = solvedLevels.getPropertyCount() - 1; i>=0; i--){
 				solved.add(Integer.parseInt(solvedLevels.getProperty(i).toString()));
 			}
 			
-			SoapObject votesList = obj(obj(soapEnvelop.bodyIn).getProperty(2));
+			SoapObject votesList = obj(body.getProperty("votes"));
 			for(int i = votesList.getPropertyCount() - 1; i >= 0; i--){
 				SoapObject vote = obj(votesList.getProperty(i));
 				LevelVoteInfo voteInfo = new LevelVoteInfo(
