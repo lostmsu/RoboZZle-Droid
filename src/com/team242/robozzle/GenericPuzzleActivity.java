@@ -353,6 +353,16 @@ public abstract class GenericPuzzleActivity extends AppCompatActivity {
 		final Rect dest = new Rect();
 		paint.setAntiAlias(false);
 		paint.setDither(false);
+
+		canvas.save();
+		dest.top = 0; dest.bottom = puzzle.getHeight() * cellSize;
+		dest.left = 0; dest.right = puzzle.getWidth() * cellSize;
+		canvas.clipRect(dest);
+		Paint clear = new Paint();
+		clear.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+		canvas.drawPaint(clear);
+		canvas.restore();
+
 		for(int y = puzzle.getHeight() - 1; y >= 0; y--){
 			dest.top = y * cellSize;
 			dest.bottom = (y + 1) * cellSize;
@@ -375,12 +385,6 @@ public abstract class GenericPuzzleActivity extends AppCompatActivity {
 						break;
 					}
 					canvas.drawBitmap(board, src, dest, paint);
-				} else {
-					// TODO: do it by demand only
-					canvas.saveLayer(0, 0, canvas.getWidth(), canvas.getHeight(), null);
-					canvas.clipRect(dest);
-					canvas.drawColor(0, PorterDuff.Mode.CLEAR);
-					canvas.restore();
 				}
 			}
 		}
@@ -446,7 +450,7 @@ public abstract class GenericPuzzleActivity extends AppCompatActivity {
 			break;
 
 		default:
-			canvas.saveLayer(0, 0, canvas.getWidth(), canvas.getHeight(), null);
+			canvas.save();
 			canvas.clipRect(dest);
 			canvas.drawARGB(0, 128, 128, 128);
 			canvas.restore();
