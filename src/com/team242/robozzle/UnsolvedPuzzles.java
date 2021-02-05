@@ -404,6 +404,7 @@ public class UnsolvedPuzzles extends GenericPuzzleActivity {
 		String password = pref.getString(RoboZZleSettings.PASSWORD, "");
 		if (login.length() == 0 || password.length() == 0) {
 			Toast.makeText(this, R.string.provideLogin, Toast.LENGTH_LONG).show();
+			this.showLoginDialog();
 			return;
 		}
 		
