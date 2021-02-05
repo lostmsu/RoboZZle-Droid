@@ -46,6 +46,7 @@ public class RobozzleWebClient {
 	static final String GET_TOP_SOLVERS = "GetTopSolvers";
 	static final String LOG_IN = "LogIn";
 	static final String REGISTER_USER = "RegisterUser";
+	static final String SOLVED_LEVELS = "solvedLevels";
 	static final String GET_LEVEL = "GetLevels";
 	static final String GET_LEVELS = "GetLevels2";
 	static final String GET_LEVELS_PAGED = "GetLevelsPaged";
@@ -163,11 +164,14 @@ public class RobozzleWebClient {
 			String hash = computeHash(password);
 			request.addProperty("password", hash);
 			request.addProperty("email", email);
+			SoapObject solvedLevels = new SoapObject(NAMESPACE, SOLVED_LEVELS);
+			request.addSoapObject(solvedLevels);
 
 			soapEnvelop.setOutputSoapObject(request);
 
 			transport.call(action(REGISTER_USER), soapEnvelop);
-			return prim(soapEnvelop.getResponse()).toString();
+			Object error = prim(soapEnvelop.getResponse());
+			return error == null ? null : error.toString();
 		} catch (NoSuchAlgorithmException e){
 			throw new OperationNotSupportedByClientException(e);
 		} catch (XmlPullParserException e){
