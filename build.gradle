@@ -17,13 +17,13 @@ repositories {
 }
 
 dependencies {
-    compile 'commons-io:commons-io:2.4'
-    compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.4'
-    compile 'com.j256.ormlite:ormlite-android:4.48'
-    compile 'androidx.legacy:legacy-support-v4:1.0.0'
-    compile 'androidx.appcompat:appcompat:1.2.0'
-    compile 'net.sf.flexjson:flexjson:3.2'
-    compile 'io.github.lostmsu:org.cs2j.dotnet.corlib:0.1'
+    implementation 'commons-io:commons-io:2.4'
+    implementation 'com.google.code.ksoap2-android:ksoap2-android:3.6.4'
+    implementation 'com.j256.ormlite:ormlite-android:4.48'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'net.sf.flexjson:flexjson:3.2'
+    implementation 'io.github.lostmsu:org.cs2j.dotnet.corlib:0.1'
 }
 
 android {
@@ -56,5 +56,6 @@ android {
     }
     defaultConfig {
         minSdkVersion 14
+        targetSdkVersion 29
     }
 }
