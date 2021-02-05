@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
 /**
@@ -15,5 +16,8 @@ public class AboutActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.about);
+
+        TextView aboutText = (TextView)findViewById(R.id.aboutText);
+        aboutText.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }
