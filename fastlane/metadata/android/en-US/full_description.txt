@@ -1,0 +1,5 @@
+Over 1024 levels from very easy 1 minute ones to extremely hard, which could take hours to solve.
+
+RoboZZle is a cool programming puzzle game invented by Igor Ostrovsky.
+Your program will control a robot to collect all items from 2D tri-colored field.
+You can move, turn, repaint cells and call very short (in most cases) functions.
