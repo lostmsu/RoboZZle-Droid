@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest package="com.team242.robozzle" xmlns:android="http://schemas.android.com/apk/res/android"
-	android:versionName="0.4.3.51" android:versionCode="58"
+	android:versionName="0.4.3.52" android:versionCode="59"
 	android:installLocation="auto"
 	>
 	<application android:icon="@drawable/icon" android:label="@string/app_name" android:name="RoboZZleApplication"
