@@ -2,6 +2,8 @@
 
 An old project I decided to open source.
 
+[![RoboZZle Droid in Play Store](Social.png)](https://play.google.com/store/apps/details?id=com.team242.robozzle)
+
 #
 
 If you are into programming, check out [my other stuff](https://losttech.software/).
