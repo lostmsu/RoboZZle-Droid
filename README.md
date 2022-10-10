@@ -13,7 +13,8 @@ An old project I decided to open source.
      alt="Get it on Google Play"
      height="80">](https://play.google.com/store/apps/details?id=com.team242.robozzle)
 
-If you are into programming, check out [my other stuff](https://losttech.software/).
-
-If you are on Windows, and have a gaming PC,
-try [my Ethereum miner too](https://losttech.software/Downloads/Mine/). 
+A few of my tools for advanced users on Windows:
+- [Stack WM](https://www.microsoft.com/store/apps/9P4RJ8RL7QGS?cid=robozzle) -
+tiling window manager with XAML-based configuration.
+- [SSHD Wizard](https://apps.microsoft.com/store/detail/sshd-wizard/9P1TS9NVTGML?cid=robozzle) -
+combines your SSH and HDD into a SSHD.
