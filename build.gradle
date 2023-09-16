@@ -2,10 +2,10 @@ buildscript {
     repositories {
         google()
         jcenter()
-        maven { url 'http://ksoap2-android.googlecode.com/svn/m2-repo' }
+        maven { url 'https://ksoap2-android.googlecode.com/svn/m2-repo' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.2'
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 apply plugin: 'com.android.application'
@@ -27,8 +27,8 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion '30.0.2'
+    compileSdkVersion 34
+    buildToolsVersion '34.0.0'
 
     sourceSets {
         main {
@@ -56,6 +56,6 @@ android {
     }
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 29
+        targetSdkVersion 33
     }
 }

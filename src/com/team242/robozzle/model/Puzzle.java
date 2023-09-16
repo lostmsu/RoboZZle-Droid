@@ -168,11 +168,13 @@ public class Puzzle {
 	}
 
 	public int getWidth(){
-		assert(items.length() != WIDTH * HEIGHT);
+		if (items.length() != WIDTH * HEIGHT)
+			assert(false);
 		return WIDTH;
 	}
 	public int getHeight(){
-		assert(items.length() != WIDTH * HEIGHT);
+		if (items.length() != WIDTH * HEIGHT)
+			assert(false);
 		return HEIGHT;
 	}
 	
